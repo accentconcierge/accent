@@ -76,4 +76,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #for heroku
+  #note localhost changed to current host name
+  config.action_mailer.default_url_options = { host: 'accentconcierge.herokuapp.com' }
 end
